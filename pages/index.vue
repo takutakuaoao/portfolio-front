@@ -1,15 +1,20 @@
 <template>
   <div class="container background">
-    <div class="l_top">
-      <div class="l_menu">
-        <ul class="menu">
-          <li class="menuList"><span>Profile</span></li>
-          <li class="menuList"><span>Skill</span></li>
-        </ul>
-      </div>
-      <div class="l_title">
-        <div class="subTitle"><span>Takuya Aotsuka</span></div>
-        <div class="title">Portfolio</div>
+    <div class="center">
+      <div class="l_top">
+        <div class="l_menu">
+          <ul class="menu">
+            <li class="menuList"><span>Profile</span></li>
+            <li class="menuList"><span>Skill</span></li>
+            <li class="menuList"><span>Contact</span></li>
+          </ul>
+        </div>
+        <div class="l_title">
+          <div class="l_subTitle">
+            <div class="subTitle"><span>Takuya Aotsuka</span></div>
+          </div>
+          <div class="title">Portfolio</div>
+        </div>
       </div>
     </div>
   </div>
@@ -28,12 +33,35 @@ export default Vue.extend({});
 }
 
 .background {
-  background: #222b30;
+  background: #000000;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.l_menu {
+  & .menuList {
+    margin-bottom: 10px;
+  }
+}
+
+.menu {
+  &List {
+    list-style: none;
+    font-family: "Roboto";
+    font-size: 12rem;
+    color: #cacaca;
+  }
 }
 
 .l_top {
   display: flex;
   justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  padding-top: 7%;
 }
 
 .l_title {
@@ -43,7 +71,7 @@ export default Vue.extend({});
 .title {
   font-family: "Roboto";
   display: block;
-  font-size: 120px;
+  font-size: 14rem;
   color: #cacaca;
   letter-spacing: 1px;
   writing-mode: vertical-lr;
