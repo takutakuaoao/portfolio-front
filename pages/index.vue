@@ -4,9 +4,9 @@
       <div class="l_top">
         <div class="l_menu">
           <ul class="menu">
-            <li class="menuList"><span>Profile</span></li>
-            <li class="menuList"><span>Skill</span></li>
-            <li class="menuList"><span>Contact</span></li>
+            <NuxtLink to="/profile"> <li class="menuList"><span>Profile</span></li></NuxtLink>
+            <NuxtLink to="/skill"><li class="menuList"><span>Skill</span></li></NuxtLink>
+            <NuxtLink to="/contact"><li class="menuList"><span>Contact</span></li></NuxtLink>
           </ul>
         </div>
         <div class="l_title">
